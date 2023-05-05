@@ -1,0 +1,647 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.bgColorBlack {
+  background-color: black;
+}
+
+.bgColorAzul {
+  background-color: #038bbb;
+}
+
+.bgColorGris {
+  background-color: grey;
+}
+
+.bgColorAmarillo {
+  background-color: lightyellow;
+}
+
+.bgColorWhite {
+  background-color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.logo {
+  width: 8%;
+  height: auto;
+  margin: 5%;
+}
+
+.marginImg {
+  margin: 2px;
+}
+
+.beYou {
+  color: rgb(230, 154, 13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.envio {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.inputNav {
+  margin: 30%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  margin: 15px;
+  padding: 5%;
+  font-size: 150%;
+}
+
+a {
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 3px 3px black;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-size: 105%;
+}
+
+.desaparecer2 {
+  display: none;
+}
+
+/*INDEX*/
+.tamaño img {
+  width: 100%;
+  height: 100%;
+}
+
+.img1, .img2, .img3, .img4 {
+  align-items: center;
+  justify-content: center;
+}
+
+.img1 a {
+  font-size: x-large;
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+}
+
+.img2 a {
+  font-size: x-large;
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.img3 a {
+  font-size: x-large;
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+}
+
+.img4 a {
+  font-size: x-large;
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  margin: 5%;
+}
+
+.img4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tamaño a:hover {
+  font-size: 155%;
+  text-decoration: underline;
+}
+
+.tamaño2 img {
+  width: 80%;
+  height: 100%;
+}
+
+.mainQsomos p {
+  color: white;
+  font-size: x-large;
+}
+
+.mainQsomos h1 {
+  color: white;
+}
+
+.mainQsomos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.indexGrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px 50px 50px 75% auto;
+  grid-template-areas: "header" "rectangulo1" "rectangulo2" "main" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.rectangulo1 {
+  grid-area: rectangulo1;
+}
+
+.rectangulo2 {
+  grid-area: rectangulo2;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.mainIndex {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 30% 70%;
+  grid-template-areas: "img1 img2 img3" "img4 img4 img4";
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 14% 14% 14% 16% 14% 14% 14%;
+  grid-template-rows: 150px;
+  grid-template-areas: "rrss1 rrss2 rrss3 rrss4 rrss5 rrss6 rrss7";
+}
+
+.rrss1 {
+  grid-area: rrss1;
+}
+
+.rrss2 {
+  grid-area: rrss2;
+}
+
+.rrss3 {
+  grid-area: rrss3;
+}
+
+.rrss4 {
+  grid-area: rrss4;
+}
+
+.rrss5 {
+  grid-area: rrss5;
+}
+
+.rrss6 {
+  grid-area: rrss6;
+}
+
+.rrss7 {
+  grid-area: rrss7;
+}
+
+/*Artistas*/
+.primerEncab {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nombresArtist {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.imagenesArtist img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.artistasGrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 15% 65%;
+  grid-template-areas: "primerEncab" "nombresArtist" "imagenesArtist";
+}
+
+.primerEncab {
+  grid-area: primerEncab;
+}
+
+.nombresArtist {
+  grid-area: nombresArtist;
+}
+
+.imagenesArtist {
+  grid-area: imagenesArtist;
+}
+
+.imagenesArtist {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 100%;
+  grid-template-areas: "drake kendrick theWeeknd";
+}
+
+.drake {
+  grid-area: drake;
+}
+
+.kendrick {
+  grid-area: kendrick;
+}
+
+.theWeeknd {
+  grid-area: theWeeknd;
+}
+
+.imagenesArtist {
+  align-items: center;
+}
+
+/*CONTACTO*/
+.contactoGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "mapa inputs";
+}
+
+.mapa {
+  grid-area: mapa;
+}
+
+.inputs {
+  grid-area: inputs;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+
+.inputs {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs input {
+  padding: 1%;
+  margin: 2%;
+  width: 50%;
+}
+
+.texto {
+  height: 35%;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1450px) {
+  .desaparecer {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    width: 13%;
+    height: auto;
+  }
+  .mainIndex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "img1" "img2" "img3" "img4";
+  }
+  .img1 {
+    grid-area: img1;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+  .img4 {
+    grid-area: img4;
+  }
+  .roll {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .logoFooter img {
+    width: auto;
+    height: auto;
+  }
+  footer {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .envio {
+    font-size: 90%;
+  }
+  .beYou {
+    font-size: 80%;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    padding: 1%;
+  }
+  .img1, .img2, .img3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .rrss4 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .rrss4 img {
+    width: 50%;
+    height: 50%;
+  }
+  .indexGrid {
+    position: relative;
+  }
+  .footerGrid {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 150px;
+    grid-template-areas: "rrss1 rrss2 rrss4 rrss5 rrss6";
+  }
+  .rrss1 {
+    grid-area: rrss1;
+  }
+  .rrss2 {
+    grid-area: rrss2;
+  }
+  .rrss4 {
+    grid-area: rrss4;
+  }
+  .rrss5 {
+    grid-area: rrss5;
+  }
+  .rrss6 {
+    grid-area: rrss6;
+  }
+  .menuHamb {
+    display: flex;
+    width: 12%;
+    height: 12%;
+    object-fit: contain;
+  }
+  .userIcon {
+    display: flex;
+    width: 17%;
+    height: 17%;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  .menuHamb img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .userIcon img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    top: 25%;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-auto-rows: 100%;
+    grid-template-areas: "menuHamb logo userIcon";
+  }
+  .menuHamb {
+    grid-area: menuHamb;
+  }
+  .logo {
+    grid-area: logo;
+  }
+  .userIcon {
+    grid-area: userIcon;
+  }
+  header {
+    justify-items: center;
+  }
+  .logo {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+}
+.card {
+  width: 60%;
+  height: 60%;
+  margin: 10% solid white;
+  padding: 7%;
+  border-radius: 10px;
+}
+
+.imgCard {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.mainProductos {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+}
+
+.card1 {
+  grid-area: card1;
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+}
+
+.card4 {
+  grid-area: card4;
+}
+
+.card5 {
+  grid-area: card5;
+}
+
+.card6 {
+  grid-area: card6;
+}
+
+.mainProductos {
+  align-items: center;
+  justify-items: center;
+}
+
+.mainProductos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1450px) {
+  .mainProductos {
+    max-height: 100%;
+  }
+  .mainProductos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6";
+  }
+  .card1 {
+    grid-area: card1;
+  }
+  .card2 {
+    grid-area: card2;
+  }
+  .card3 {
+    grid-area: card3;
+  }
+  .card4 {
+    grid-area: card4;
+  }
+  .card5 {
+    grid-area: card5;
+  }
+  .card6 {
+    grid-area: card6;
+  }
+}
+@media (max-width: 1450px) {
+  .contactoGrid {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "mapa" "inputs";
+  }
+  .mapa {
+    grid-area: mapa;
+  }
+  .inputs {
+    grid-area: inputs;
+  }
+}
+.mainQsomos {
+  padding: 8%;
+}
+
+.card img {
+  max-height: 70%;
+}
+
+@media (max-width: 1450px) {
+  .artistasGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "primerEncab" "imagenesArtist";
+  }
+  .imagenesArtist {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 34%;
+    grid-template-areas: "drake" "kendrickLamar" "theWeeknd";
+  }
+  .drake {
+    grid-area: drake;
+  }
+  .kendrick {
+    grid-area: kendrickLamar;
+  }
+  .theWeeknd {
+    grid-area: theWeeknd;
+  }
+  .imagenesArtist img {
+    object-fit: fill;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
